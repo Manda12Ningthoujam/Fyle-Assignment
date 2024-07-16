@@ -39,7 +39,7 @@ dots.forEach((dot, index) => {
 document.querySelectorAll('.project').forEach(project => {
     project.addEventListener('click', function() {
         const imageName = this.getAttribute('data-image');
-        document.getElementById('project-image').src = `/images/${imageName}`;
+        document.getElementById('project-image').src = `./images/${imageName}`;
         
   
         document.querySelectorAll('.project').forEach(p => p.classList.remove('highlighted'));
